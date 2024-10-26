@@ -12,7 +12,7 @@ const Home =()=>{
                     <p>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>
                     <Buttons>
                         <button className="btn1">
-                        <IoLogoApple size={34} />
+                        <IoLogoApple size={44} />
                             <div className="text1">
                                 <h5>Download on the</h5>
                                 <h4>App Store</h4>
@@ -57,38 +57,43 @@ h1{
 `
 const Buttons = styled.div`
 display: flex;
-gap: 50px;
+gap: 20px;
 margin-left: 50px;
 .btn1{
     display: flex;
-    height: 70px;
-    width: 180px;
+    height: 60px;
+    width: 160px;
     background-color: black;
     border: none;
     color: white;
-
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
 .text1{
     line-height: 0;
 h5{
-    font-size: 10px;
+    font-size: 8px;
+    font-weight: 400;
 }
 h4{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 }
 }
 .btn2{
     display: flex;
-    height: 70px;
+    height: 60px;
     width: 180px;
     background-color: black;
     border: none;
     color: white;
+    border-radius: 10px;
+    padding-left: 10px;
  img{
-    width: 50px;
-    height: 50px;
-    padding-top: 10px;
+    width: 44px;
+    height: 44px;
+    padding-top: 3px;
 }
 .text2{
     line-height: 0;
@@ -96,7 +101,7 @@ h5{
     font-size: 10px;
 }
 h4{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 }

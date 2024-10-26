@@ -35,20 +35,8 @@ const Header =()=>{
                     <img src="nigeria.png" alt="" />
                 </ConBtn>
                 <SideNav>
-          {/* Checkbox hack for toggling the select */}
-          <input type="checkbox" id="menu-toggle" />
-          <label htmlFor="menu-toggle">
-            <GiHamburgerMenu />
-          </label>
-          <Dropdown>
-            <select>
-              <option value="personal">Personal</option>
-              <option value="business">Business</option>
-              <option value="company">Company</option>
-              <option value="help">Help</option>
-            </select>
-          </Dropdown>
-        </SideNav>
+                  <GiHamburgerMenu />
+                </SideNav>
 
             </ButtonNav>
 
@@ -139,33 +127,6 @@ const SideNav = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    label {
-      cursor: pointer;
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-    input[type="checkbox"]:checked ~ div {
-      display: block;
-    }
-  }
-`
-
-const Dropdown = styled.div`
-  display: none; 
-  margin-top: 10px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 5px;
-  select {
-    width: 100%;
-    padding: 5px;
-    border: none;
-    outline: none;
   }
 `
